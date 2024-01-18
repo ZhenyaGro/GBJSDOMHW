@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminar3</title>
+  <style>
+    #photo-container {
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+      /* gap: 10px; */
+    }
+
+    .photo {
+      flex: 1 1 calc(33.33% - 20px);
+      margin: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="photo-container"></div>
+    <div id="autor"></div>
+    <button id="like">Likes 0</button>
+  </div>
+
+  <script src="script.js">
+    // JavaScript-код будет вставлен здесь
+  </script>
+</body>
+
+</html>

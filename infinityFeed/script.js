@@ -1,6 +1,6 @@
 const photoContainer = document.getElementById('photo-container');
 let page = 1;
-const accessKey = '3UJY8_pqPuAA7xHoWYtXrXCLP9xeJA-mQ5YP21EpYhQ';
+const accessKey = 'Your_key';
 
 async function fetchPhotos() {
   try {
@@ -16,7 +16,6 @@ async function fetchPhotos() {
 async function loadMorePhotos() {
   // создание контента
   const photos = await fetchPhotos();
-  // console.log(photos);
   photos.forEach(photoItem => {
     const img = document.createElement('img');
     img.setAttribute('src', photoItem.urls.small);
